@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CookBook Database</title>
+</head>
+<body>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<table>
+    <tr>
+        <th><a href="/index.html" title="Go to the Main Page">Main Page</a></th>
+        <th><a href="/recepies.html" title="Go to see only recepies">Recepies</a></th>
+        <th><a href="/ingridients.html" title="Go to see all the ingridients">Ingridients</a></th>
+        <th><a href="/search.html" title="Go to Search Recipe or Ingridient">Search</a></th>
+        <th><a href="/gallery.html" title="Go to the Photo Gallery">Gallery</a></th>
+        <th><a href="/feedback.html" title="Leave some feedback">Feedback</a></th>
+    </tr>
+</table>
+<h2>Leave your feedback in the form below</h2>
+<form action="/feedback.html" method="post">
+  <label for="name">Enter your name here:</label><br>
+  <input type="text" id="name" name="fname" value="Alex"><br>
+  <label for="msg">Enter message and it will be displayed on site:</label><br>
+  <textarea id="msg" name="messg" rows="10" cols="30">Some text here</textarea><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
